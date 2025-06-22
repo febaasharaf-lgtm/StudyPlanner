@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" fx:controller="controller.TimerController">
+    <Label text="Smart Study Planner with Pomodoro Timer" />
+    <TextField fx:id="taskNameField" promptText="Task Name"/>
+    <TextField fx:id="durationField" promptText="Duration (minutes)"/>
+    <Button text="Add Task" onAction="#handleAddTask"/>
+    
+    <ListView fx:id="taskList"/>
+    
+    <ProgressBar fx:id="progressBar" prefWidth="200"/>
+    <Label fx:id="timerLabel" text="25:00"/>
+    <Button text="Start Timer" onAction="#startPomodoro"/>
+</VBox>
