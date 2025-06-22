@@ -1,4 +1,4 @@
- StudyPlanner
+StudyPlanner
 Smart Study Planner with Pomodoro Timer
 # 📚 Simple Smart Study Planner with Pomodoro Timer ⏳
 
