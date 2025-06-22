@@ -1,0 +1,10 @@
+public class ExportUtil {
+    public static void exportToCSV(List<Task> tasks) throws IOException {
+        FileWriter writer = new FileWriter("study_log.csv");
+        writer.write("Task,Duration,TimeSpent\n");
+        for (Task t : tasks) {
+            writer.write(t.getName() + "," + t.getDurationMinutes() + "," + t.getTimeSpent() + "\n");
+        }
+        writer.close();
+    }
+}
