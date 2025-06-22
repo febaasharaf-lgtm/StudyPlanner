@@ -1,0 +1,10 @@
+@FXML private BarChart<String, Number> weeklyChart;
+
+private void loadWeeklyChart() {
+    XYChart.Series<String, Number> series = new XYChart.Series<>();
+    for (Task t : TaskData.getTasks()) {
+        series.getData().add(new XYChart.Data<>(t.getName(), t.getTimeSpent()));
+    }
+    weeklyChart.getData().clear();
+    weeklyChart.getData().add(series);
+}
